@@ -3,6 +3,15 @@
 In this session we go through many architectures starting from the very basic skeleton and try to achieve the goal of getting 99.4% accuracy on the MNIST dataset using under 10,000 parameters and 15 epochs.
 
 
+# FINAL RESULT 
+
+We achieved the best results in Round 3 where we required to use : 
+- 5760 parameters
+- 99.30% of training accuracy in 12th Epoch
+- 99.40% of testing accuracy in 9th Epoch
+- Best testing accuracy - 99.44% in 13th Epoch
+
+
 # Round 0 
 
 - get the code setup right.
