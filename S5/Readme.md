@@ -142,7 +142,7 @@ Best Test Accuracy - 99.41% @ 15th Epoch
 
 ### Code Link Round 1 --
 
-![Round 1 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_1.ipynb)
+[Round 1 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_1.ipynb)
 
 ## Epochs logs Round 1 : 
 
@@ -248,7 +248,7 @@ till 6616 number of parameters.
 
 ### Code Link Round 2 --
 
-![Round 2 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_2.ipynb)
+[Round 2 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_2.ipynb)
 
 ## Epochs logs Round 2 : 
 
@@ -355,7 +355,7 @@ intelligent changes in the architecture by keeping number of channels low in ini
 
 ### Code Link Round 3 --
 
-![Round 3 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_3.ipynb)
+[Round 3 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_3.ipynb)
 
 ## Epochs logs Round 3 : 
 
