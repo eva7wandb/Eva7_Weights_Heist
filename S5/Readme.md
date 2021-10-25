@@ -10,11 +10,11 @@ In this session we go through many architectures starting from the very basic sk
 - not using any img aug, and lr steps now.
 - the intention of this step is to have the correct code setup.
 
-Architecture Round 0 - 
+## Architecture Round 0 - 
 
 ![Round 0 Architecture](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%200%20Architecture.JPG)
 
-Epochs logs : 
+## Epochs logs Round 0 : 
 
 EPOCH: 0
 Loss=0.24914208054542542 Batch_id=937 Accuracy=93.78: 100%|██████████| 938/938 [00:10<00:00, 88.39it/s] 
