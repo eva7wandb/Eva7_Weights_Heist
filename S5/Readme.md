@@ -10,7 +10,7 @@ In this session we go through many architectures starting from the very basic sk
 - not using any img aug, and lr steps now.
 - the intention of this step is to have the correct code setup.
 
-## Architecture Round 0 - 
+## Architecture and Number of Parameters Round 0 - 
 
 ![Round 0 Architecture](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%200%20Architecture.JPG)
 
@@ -91,13 +91,105 @@ Loss=0.042014025151729584 Batch_id=937 Accuracy=99.11: 100%|██████�
 
 Test set: Average loss: 0.0201, Accuracy: 9941/10000 (99.41%)
 
-## Loss and Accuracy Logs
-
-![Graphs](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%200%20Logs.png)
 
 ## Results 
 
 Best Training Accuracy - 99.11% @15th Epoch
 Best Test Accuracy - 99.41% @ 15th Epoch
+
+
+# Round 1 
+
+- studied the architectures covered in the session.
+- starting from the 8th iteration of class.
+- used some image augmentation like Random Rotation and as the data is not that complex hence we reduced the drop out rate to 0.05.
+- made some changes in the architecture to reduce the number of parameters.
+
+## Architecture and Number of Parameters Round 1 - 
+
+![Round 1 Architecture](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%201%20Architecture.JPG)
+
+## Epochs logs Round 1 : 
+
+EPOCH: 0
+Loss=0.021567178890109062 Batch_id=937 Accuracy=93.94: 100%|██████████| 938/938 [00:12<00:00, 75.69it/s]
+
+Test set: Average loss: 0.0612, Accuracy: 9809/10000 (98.09%)
+
+EPOCH: 1
+Loss=0.02331358939409256 Batch_id=937 Accuracy=97.70: 100%|██████████| 938/938 [00:12<00:00, 75.90it/s]
+
+Test set: Average loss: 0.0379, Accuracy: 9886/10000 (98.86%)
+
+EPOCH: 2
+Loss=0.08054167032241821 Batch_id=937 Accuracy=98.08: 100%|██████████| 938/938 [00:12<00:00, 75.42it/s]
+
+Test set: Average loss: 0.0380, Accuracy: 9875/10000 (98.75%)
+
+EPOCH: 3
+Loss=0.041615795344114304 Batch_id=937 Accuracy=98.26: 100%|██████████| 938/938 [00:12<00:00, 75.96it/s]
+
+Test set: Average loss: 0.0335, Accuracy: 9902/10000 (99.02%)
+
+EPOCH: 4
+Loss=0.021880824118852615 Batch_id=937 Accuracy=98.56: 100%|██████████| 938/938 [00:12<00:00, 76.55it/s]
+
+Test set: Average loss: 0.0290, Accuracy: 9908/10000 (99.08%)
+
+EPOCH: 5
+Loss=0.029591504484415054 Batch_id=937 Accuracy=98.58: 100%|██████████| 938/938 [00:12<00:00, 76.65it/s]
+
+Test set: Average loss: 0.0316, Accuracy: 9897/10000 (98.97%)
+
+EPOCH: 6
+Loss=0.006225215271115303 Batch_id=937 Accuracy=98.64: 100%|██████████| 938/938 [00:12<00:00, 76.42it/s]
+
+Test set: Average loss: 0.0217, Accuracy: 9928/10000 (99.28%)
+
+EPOCH: 7
+Loss=0.006228962913155556 Batch_id=937 Accuracy=98.65: 100%|██████████| 938/938 [00:12<00:00, 76.17it/s]
+
+Test set: Average loss: 0.0278, Accuracy: 9907/10000 (99.07%)
+
+EPOCH: 8
+Loss=0.1709238439798355 Batch_id=937 Accuracy=98.94: 100%|██████████| 938/938 [00:12<00:00, 76.42it/s]
+
+Test set: Average loss: 0.0234, Accuracy: 9931/10000 (99.31%)
+
+EPOCH: 9
+Loss=0.004762503318488598 Batch_id=937 Accuracy=98.92: 100%|██████████| 938/938 [00:12<00:00, 76.87it/s]
+
+Test set: Average loss: 0.0213, Accuracy: 9938/10000 (99.38%)
+
+EPOCH: 10
+Loss=0.010546272620558739 Batch_id=937 Accuracy=99.08: 100%|██████████| 938/938 [00:12<00:00, 75.51it/s]
+
+Test set: Average loss: 0.0209, Accuracy: 9939/10000 (99.39%)
+
+EPOCH: 11
+Loss=0.0038530530873686075 Batch_id=937 Accuracy=99.08: 100%|██████████| 938/938 [00:12<00:00, 76.04it/s]
+
+Test set: Average loss: 0.0202, Accuracy: 9942/10000 (99.42%)
+
+EPOCH: 12
+Loss=0.10972241312265396 Batch_id=937 Accuracy=99.05: 100%|██████████| 938/938 [00:12<00:00, 74.95it/s]
+
+Test set: Average loss: 0.0202, Accuracy: 9944/10000 (99.44%)
+
+EPOCH: 13
+Loss=0.002599306171759963 Batch_id=937 Accuracy=99.14: 100%|██████████| 938/938 [00:12<00:00, 76.14it/s]
+
+Test set: Average loss: 0.0198, Accuracy: 9946/10000 (99.46%)
+
+EPOCH: 14
+Loss=0.07659938186407089 Batch_id=937 Accuracy=99.04: 100%|██████████| 938/938 [00:12<00:00, 76.12it/s]
+
+Test set: Average loss: 0.0194, Accuracy: 9945/10000 (99.45%)
+
+
+## Results 
+
+Best Training Accuracy - 99.14% @15th Epoch
+Best Test Accuracy - 99.46% @ 13th Epoch
 
 
