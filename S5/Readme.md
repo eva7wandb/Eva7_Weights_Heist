@@ -38,7 +38,7 @@ We achieved the best results in Round 3 where we required to use :
 
 ### Code Link Round 0 --
 
-![Round  Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_0.ipynb)
+[Round 0 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_0.ipynb)
 
 ## Epochs logs Round 0 : 
 
