@@ -1,5 +1,15 @@
 # S5 - Coding Drill Down
 
+## Team - Weights_Heist
+##Team Members - 
+
+| Name        | mail           |
+| ------------- |:-------------:|
+|Gopinath Venkatesan|gops75[at]gmail[dot]com|
+|Muhsin Mohammed|askmuhsin[at]gmail[dot]com|
+|Rashu Tyagi|rashutyagi116[at]gmail[dot]com| 
+|Subramanya R|subrananjun[at]gmail[dot]com| 
+
 In this session we go through many architectures starting from the very basic skeleton and try to achieve the goal of getting 99.4% accuracy on the MNIST dataset using under 10,000 parameters and 15 epochs.
 
 
@@ -25,6 +35,10 @@ We achieved the best results in Round 3 where we required to use :
 ## Architecture and Number of Parameters Round 0 - 
 
 ![Round 0 Architecture](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%200%20Architecture.JPG)
+
+### Code Link Round 0 --
+
+![Round  Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_0.ipynb)
 
 ## Epochs logs Round 0 : 
 
@@ -112,8 +126,7 @@ Best Test Accuracy - 99.41% @ 15th Epoch
 
 # Round 1 
 
-### Target -- As we are starting from Notebook 8 discussed in the session hence out goal here is to reduce the number of parameters by making changes in the architecture. 
-          All the changes made follows the concepts covered in the 10 session notebooks. We came up with 7936 parameters after making changes.
+### Target -- As we are starting from Notebook 8 discussed in the session hence out goal here is to reduce the number of parameters by making changes in the architecture. All the changes made follows the concepts covered in the 10 session notebooks. We came up with 7936 parameters after making changes.
 
 ### Analysis --
 - studied the architectures covered in the session.
@@ -126,6 +139,10 @@ Best Test Accuracy - 99.41% @ 15th Epoch
 ## Architecture and Number of Parameters Round 1 - 
 
 ![Round 1 Architecture](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%201%20Architecture.JPG)
+
+### Code Link Round 1 --
+
+![Round 1 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_1.ipynb)
 
 ## Epochs logs Round 1 : 
 
@@ -229,6 +246,10 @@ till 6616 number of parameters.
 
 ![Round 2 Architecture](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%202%20Architecture.JPG)
 
+### Code Link Round 2 --
+
+![Round 2 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_2.ipynb)
+
 ## Epochs logs Round 2 : 
 
 EPOCH: 0
@@ -331,6 +352,10 @@ intelligent changes in the architecture by keeping number of channels low in ini
 ## Architecture and Number of Parameters Round 3 - 
 
 ![Round 3 Architecture](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%203%20Architecture.JPG)
+
+### Code Link Round 3 --
+
+![Round 3 Code](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Final_S5_Round_3.ipynb)
 
 ## Epochs logs Round 3 : 
 
