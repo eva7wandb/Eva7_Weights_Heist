@@ -91,7 +91,9 @@ Loss=0.042014025151729584 Batch_id=937 Accuracy=99.11: 100%|██████�
 
 Test set: Average loss: 0.0201, Accuracy: 9941/10000 (99.41%)
 
-## Train and Test 
+## Loss and Accuracy Logs
+
+![Graphs](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%200%20Logs.png)
 
 ## Results 
 
