@@ -398,4 +398,4 @@ Test set: Average loss: 0.0185, Accuracy: 9941/10000 (99.41%)
 ## Results 
 
 Best Training Accuracy - 99.30% @12th Epoch
-Best Test Accuracy - 99.40% @ 9th Epoch
+Best Test Accuracy - 99.40% @ 9th Epoch later received accuracy of 99.44% in 13th Epoch.
