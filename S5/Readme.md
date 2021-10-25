@@ -230,8 +230,7 @@ Best Test Accuracy - 99.46% @ 13th Epoch
 
 # Round 2 
 
-### Target -- In the previous round we went down till 7936 parameters but this time we are making changes in the architecture such that this number could come down. It came down 
-till 6616 number of parameters.
+### Target -- In the previous round we went down till 7936 parameters but this time we are making changes in the architecture such that this number could come down. It came down till 6616 number of parameters.
 
 ### Analysis --
 - studied the architectures covered in the session.
