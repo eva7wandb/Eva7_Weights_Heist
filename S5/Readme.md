@@ -14,8 +14,9 @@ We achieved the best results in Round 3 where we required to use :
 
 # Round 0 
 
-Target -- To setup the basic code architecture before we start experimenting.
+### Target -- To setup the basic code architecture before we start experimenting.
 
+### Analysis --
 - get the code setup right.
 - starting from the 8th iteration of class.
 - not using any img aug, and lr steps now.
@@ -111,9 +112,10 @@ Best Test Accuracy - 99.41% @ 15th Epoch
 
 # Round 1 
 
-Target -- As we are starting from Notebook 8 discussed in the session hence out goal here is to reduce the number of parameters by making changes in the architecture. 
+### Target -- As we are starting from Notebook 8 discussed in the session hence out goal here is to reduce the number of parameters by making changes in the architecture. 
           All the changes made follows the concepts covered in the 10 session notebooks. We came up with 7936 parameters after making changes.
 
+### Analysis --
 - studied the architectures covered in the session.
 - starting from the 8th iteration of class.
 - used some image augmentation like Random Rotation and as the data is not that complex hence we reduced the drop out rate to 0.05.
@@ -211,9 +213,10 @@ Best Test Accuracy - 99.46% @ 13th Epoch
 
 # Round 2 
 
-Target -- In the previous round we went down till 7936 parameters but this time we are making changes in the architecture such that this number could come down. It came down 
+### Target -- In the previous round we went down till 7936 parameters but this time we are making changes in the architecture such that this number could come down. It came down 
 till 6616 number of parameters.
 
+### Analysis --
 - studied the architectures covered in the session.
 - starting from the 8th iteration of class.
 - used some image augmentation like Random Rotation and as the data is not that complex hence we reduced the drop out rate to 0.05.
@@ -312,9 +315,10 @@ Best Test Accuracy - 99.34% @ 14th Epoch
 
 # Round 3 
 
-Target - In previous round the changes we made were not alligned with the accuracy we wanted in given number of epoch. Hence this time we are going more aggresive to make 
+### Target - In previous round the changes we made were not alligned with the accuracy we wanted in given number of epoch. Hence this time we are going more aggresive to make 
 intelligent changes in the architecture by keeping number of channels low in initial layers. We dropped till 5760 parameters. 
 
+### Analysis --
 - studied the architectures covered in the session.
 - starting from the 8th iteration of class.
 - used some image augmentation like Random Rotation and as the data is not that complex hence we reduced the drop out rate to 0.01 so that we can get training accuracy 
