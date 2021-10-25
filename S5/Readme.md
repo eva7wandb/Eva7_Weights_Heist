@@ -90,3 +90,12 @@ EPOCH: 14
 Loss=0.042014025151729584 Batch_id=937 Accuracy=99.11: 100%|██████████| 938/938 [00:10<00:00, 89.41it/s] 
 
 Test set: Average loss: 0.0201, Accuracy: 9941/10000 (99.41%)
+
+## Train and Test 
+
+## Results 
+
+Best Training Accuracy - 99.11% @15th Epoch
+Best Test Accuracy - 99.41% @ 15th Epoch
+
+
