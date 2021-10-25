@@ -201,7 +201,7 @@ Best Test Accuracy - 99.46% @ 13th Epoch
 - starting from the 8th iteration of class.
 - used some image augmentation like Random Rotation and as the data is not that complex hence we reduced the drop out rate to 0.05.
 - made some changes in the architecture to reduce the number of parameters. But the changes made were not beneficial for the accuracy Hence need to make the changes in the 
-- model architecture more carefully.
+  model architecture more carefully.
 - Also learning rate was used as 0.08 (slightly larger than before so that loss could converge in the given number of epochs. 
 - In LR Scheduler StepLR with step size = 8 was used.
 
@@ -291,3 +291,102 @@ Test set: Average loss: 0.0196, Accuracy: 9934/10000 (99.34%)
 
 Best Training Accuracy - 99.08% @15th Epoch
 Best Test Accuracy - 99.34% @ 14th Epoch
+
+
+# Round 3 
+
+- studied the architectures covered in the session.
+- starting from the 8th iteration of class.
+- used some image augmentation like Random Rotation and as the data is not that complex hence we reduced the drop out rate to 0.01 so that we can get training accuracy 
+  pushed furthur.
+- in the round 2 we made some changes in the architecture to reduce the number of parameters. But the changes made were not beneficial for the accuracy Hence needed to make the   changes in the model architecture more carefully. So this time we reduced the number of parameters furthur to 5760 only. We reduced the number of channels expanded in the 
+  initial layers. And kept it same for later layers.
+- Also learning rate was increased furthur to  0.1 (larger than before so that loss could converge in the given number of epochs). 
+- In LR Scheduler StepLR with step size = 8 was used.
+
+## Architecture and Number of Parameters Round 3 - 
+
+![Round 3 Architecture](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S5/Round%203%20Architecture.JPG)
+
+## Epochs logs Round 3 : 
+
+EPOCH: 0
+Loss=0.37541574239730835 Batch_id=937 Accuracy=94.44: 100%|██████████| 938/938 [00:11<00:00, 79.09it/s]
+
+Test set: Average loss: 0.0444, Accuracy: 9859/10000 (98.59%)
+
+EPOCH: 1
+Loss=0.07676538825035095 Batch_id=937 Accuracy=98.02: 100%|██████████| 938/938 [00:11<00:00, 79.20it/s]
+
+Test set: Average loss: 0.0364, Accuracy: 9885/10000 (98.85%)
+
+EPOCH: 2
+Loss=0.017059624195098877 Batch_id=937 Accuracy=98.35: 100%|██████████| 938/938 [00:11<00:00, 78.21it/s]
+
+Test set: Average loss: 0.0327, Accuracy: 9883/10000 (98.83%)
+
+EPOCH: 3
+Loss=0.17036381363868713 Batch_id=937 Accuracy=98.58: 100%|██████████| 938/938 [00:11<00:00, 78.38it/s]
+
+Test set: Average loss: 0.0304, Accuracy: 9914/10000 (99.14%)
+
+EPOCH: 4
+Loss=0.004475714638829231 Batch_id=937 Accuracy=98.66: 100%|██████████| 938/938 [00:11<00:00, 79.49it/s]
+
+Test set: Average loss: 0.0272, Accuracy: 9909/10000 (99.09%)
+
+EPOCH: 5
+Loss=0.004099765792489052 Batch_id=937 Accuracy=98.77: 100%|██████████| 938/938 [00:11<00:00, 79.04it/s]
+
+Test set: Average loss: 0.0286, Accuracy: 9906/10000 (99.06%)
+
+EPOCH: 6
+Loss=0.008736259303987026 Batch_id=937 Accuracy=98.80: 100%|██████████| 938/938 [00:11<00:00, 79.25it/s]
+
+Test set: Average loss: 0.0262, Accuracy: 9909/10000 (99.09%)
+
+EPOCH: 7
+Loss=0.01247859001159668 Batch_id=937 Accuracy=98.85: 100%|██████████| 938/938 [00:11<00:00, 79.84it/s]
+
+Test set: Average loss: 0.0220, Accuracy: 9921/10000 (99.21%)
+
+EPOCH: 8
+Loss=0.0666138157248497 Batch_id=937 Accuracy=99.11: 100%|██████████| 938/938 [00:11<00:00, 80.01it/s]
+
+Test set: Average loss: 0.0197, Accuracy: 9936/10000 (99.36%)
+
+EPOCH: 9
+Loss=0.046316105872392654 Batch_id=937 Accuracy=99.21: 100%|██████████| 938/938 [00:11<00:00, 80.41it/s]
+
+Test set: Average loss: 0.0190, Accuracy: 9940/10000 (99.40%)
+
+EPOCH: 10
+Loss=0.015911150723695755 Batch_id=937 Accuracy=99.22: 100%|██████████| 938/938 [00:12<00:00, 78.07it/s]
+
+Test set: Average loss: 0.0189, Accuracy: 9938/10000 (99.38%)
+
+EPOCH: 11
+Loss=0.007962384261190891 Batch_id=937 Accuracy=99.29: 100%|██████████| 938/938 [00:11<00:00, 80.11it/s]
+
+Test set: Average loss: 0.0184, Accuracy: 9939/10000 (99.39%)
+
+EPOCH: 12
+Loss=0.0019018036546185613 Batch_id=937 Accuracy=99.30: 100%|██████████| 938/938 [00:11<00:00, 78.64it/s]
+
+Test set: Average loss: 0.0182, Accuracy: 9938/10000 (99.38%)
+
+EPOCH: 13
+Loss=0.02076808735728264 Batch_id=937 Accuracy=99.29: 100%|██████████| 938/938 [00:11<00:00, 79.11it/s]
+
+Test set: Average loss: 0.0184, Accuracy: 9944/10000 (99.44%)
+
+EPOCH: 14
+Loss=0.0008669004309922457 Batch_id=937 Accuracy=99.28: 100%|██████████| 938/938 [00:12<00:00, 77.75it/s]
+
+Test set: Average loss: 0.0185, Accuracy: 9941/10000 (99.41%)
+
+
+## Results 
+
+Best Training Accuracy - 99.30% @12th Epoch
+Best Test Accuracy - 99.40% @ 9th Epoch
