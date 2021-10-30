@@ -1,10 +1,10 @@
 ## Parametrized model class
 The model class is parametrized, and can be optionally set or unset the following layers --
-- `dropout_value` -> float; setting to 0 will turn off dropout. and 0<val<1 will set drop out in that value.
+- `dropout_value` -> float; setting to 0 will turn off dropout. and 0<dropout_value<1 will set drop out to that value.
 - `batch_norm` -> bool; will apply batch normalization
 - `layer_norm` -> bool; will apply layer normalization
 - `group_norm` -> bool; will apply group normalization
-- `group_norm_groups` -> int; will apply the number of groups; only when group_norm is also True
+- `group_norm_groups` -> int; to set the number of groups for group norm; only when group_norm is set to True
 
 ### example usage of the model
 By default batch norm is on and drop out is set at 0.01
