@@ -87,7 +87,7 @@ model = Net(
 
 --- 
 
-# Normailzations implementation on Sheet
+# Normailzations implementation on Sheet --> [sheet](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/updated_Normalizations.xlsx)
 This spread sheet demonstrates the working of Batch Normalization, Group Normalization, and Layer Normalization.
 ![image](https://user-images.githubusercontent.com/8600096/139729172-9010cae7-d71d-4200-bd29-508aa153db09.png)
 ![image](https://user-images.githubusercontent.com/8600096/139729056-f2b6ef12-48be-443f-90aa-0bf10ec7e70c.png)
