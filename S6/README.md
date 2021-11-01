@@ -1,7 +1,7 @@
 # S5 - Regularizations
 
 ## Team - Weights_Heist
-##Team Members - 
+## Team Members - 
 
 | Name        | mail           |
 | ------------- |:-------------:|
