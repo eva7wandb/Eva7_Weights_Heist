@@ -1,3 +1,17 @@
+# S5 - Regularizations
+
+## Team - Weights_Heist
+##Team Members - 
+
+| Name        | mail           |
+| ------------- |:-------------:|
+|Gopinath Venkatesan|gops75[at]gmail[dot]com|
+|Muhsin Mohammed|askmuhsin[at]gmail[dot]com|
+|Rashu Tyagi|rashutyagi116[at]gmail[dot]com| 
+|Subramanya R|subrananjun[at]gmail[dot]com| 
+
+In this set of experiments we have tried out different normalization techniques on CNN model to classify on MNIST dataset.
+
 # Parametrized model class
 The model class is parametrized, and can be optionally set or unset the following layers --
 - `dropout_value` -> float; setting to 0 will turn off dropout. and 0<dropout_value<1 will set drop out to that value.
@@ -64,4 +78,10 @@ model = Net(
 <img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/resources/model_3_mis.png" width="800" height="400" />
 
 ---
+
+# Analysis
+
+--- 
+
+# normailzations implementation on Sheet
 
