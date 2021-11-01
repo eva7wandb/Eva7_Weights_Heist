@@ -36,8 +36,8 @@ class MNIST:
             self.test_transforms = test_transforms
             
         
-        self.train = datasets.MNIST('/tmp/data', train=True, download=True, transform=train_transforms)
-        self.test = datasets.MNIST('/tmp/data', train=False, download=True, transform=test_transforms)
+        self.train = datasets.MNIST('/tmp/data', train=True, download=True, transform=self.train_transforms)
+        self.test = datasets.MNIST('/tmp/data', train=False, download=True, transform=self.test_transforms)
             
         #data loader arguments - something you will fetch these from cmdt prompt
 
