@@ -1,4 +1,4 @@
-## Parametrized model class
+# Parametrized model class
 The model class is parametrized, and can be optionally set or unset the following layers --
 - `dropout_value` -> float; setting to 0 will turn off dropout. and 0<dropout_value<1 will set drop out to that value.
 - `batch_norm` -> bool; will apply batch normalization
@@ -44,3 +44,24 @@ model = Net(
 ```
 
 ---
+
+# Training Graphs
+<img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/resources/test_acc_4models.png" width="500" height="400" />
+<img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/resources/test_acc_3models.png" width="500" height="400" />
+<img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/resources/test_loss_4models.png" width="500" height="400" />
+<img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/resources/test_loss_3models.png" width="500" height="400" />
+
+---
+
+# Misclassified Images
+- Model 0. (BN only)
+<img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/resources/model_0_mis.png" width="800" height="400" />
+- Model 1. (GN only)
+<img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/resources/model_1_mis.png" width="800" height="400" />
+- Model 2. (LN only)
+<img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/resources/model_2_mis.png" width="800" height="400" />
+- Model 3. (BN + L1)
+<img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/resources/model_3_mis.png" width="800" height="400" />
+
+---
+
