@@ -12,6 +12,7 @@
 
 In this set of experiments we have tried out different normalization techniques on CNN model to classify on MNIST dataset.
 
+# Final Notebook with all experiments --> [Notebook](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S6/run_experiments.ipynb)
 # Parametrized model class
 The model class is parametrized, and can be optionally set or unset the following layers --
 - `dropout_value` -> float; setting to 0 will turn off dropout. and 0<dropout_value<1 will set drop out to that value.
@@ -80,8 +81,17 @@ model = Net(
 ---
 
 # Analysis
+- the first version of the model only has Batch Normalization.
+- out all the different Normalization tried, Layer Normalization yielded the best results. It also had a robust accuracy maintained after the 10th epoch.
+- adding L1 brought down the performance to about as good as a random model. We tried different approaches like removing LR scheduler, lower LR rate, and also higher lambdas. nothing seemed to work. 
 
 --- 
 
-# normailzations implementation on Sheet
+# Normailzations implementation on Sheet
+This spread sheet demonstrates the working of Batch Normalization, Group Normalization, and Layer Normalization.
+![image](https://user-images.githubusercontent.com/8600096/139729172-9010cae7-d71d-4200-bd29-508aa153db09.png)
+![image](https://user-images.githubusercontent.com/8600096/139729056-f2b6ef12-48be-443f-90aa-0bf10ec7e70c.png)
+![image](https://user-images.githubusercontent.com/8600096/139729084-dc601498-5fa8-4cab-bd38-807e1224c3ba.png)
+
+
 
