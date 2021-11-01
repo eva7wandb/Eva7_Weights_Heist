@@ -1,7 +1,7 @@
 from tqdm import tqdm
 import torch.nn.functional as F
 
-def train_model(model, device, train_loader, optimizer, epoch):
+def train_model(model, device, train_loader, optimizer, epoch, L1=False, l1_lambda = 0.01):
   train_batch_loss = []
   train_batch_acc = []
 
@@ -15,8 +15,18 @@ def train_model(model, device, train_loader, optimizer, epoch):
     optimizer.zero_grad()
     # Predict
     y_pred = model(data)
+    
     # Calculate loss
     loss = F.nll_loss(y_pred, target)
+    
+    if L1:
+      l1_loss = 0
+      for p in model.parameters():
+        l1_loss = l1_loss + p.abs().sum()
+        loss = loss + l1_lambda * l1_loss
+    else:
+      loss = loss
+      
     train_batch_loss.append(loss.item())
     # Backpropagation
     loss.backward()
