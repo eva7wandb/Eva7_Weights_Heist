@@ -1,4 +1,4 @@
-# S5 - Regularizations
+# S6 - Regularizations
 
 ## Team - Weights_Heist
 ## Team Members - 
