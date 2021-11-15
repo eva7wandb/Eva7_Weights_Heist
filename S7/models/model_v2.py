@@ -1,17 +1,6 @@
-import torch
+
 import torch.nn as nn
 import torch.nn.functional as F
-
-# Model Definition -- I modified some of the contents of the earlier MNIST model
-# This notebook defined with batch size of 64. We can increase it (to probably 256) to get a better result.
-
-# padding = 1 is default, as we have to maintain the shape for all convolution blocks
-# only last convolution block convblock8, made padding = 0 (Even there, since its an output layer, it doesn't matter, I guess)
-
-# gap -- applied with kernel_size=4
-# added argument, stride=stride inside conv_layer
-
-# set regularization_off for all layers.
 
 class depthwise_separable_block(nn.Module):
     def __init__(self, n_in, n_out, padding=1):
@@ -164,22 +153,22 @@ class Net(nn.Module):
         }
         
         # CONVOLUTION BLOCK 1
-        self.convblock1 = conv_block(n_in=3, n_mid=32, n_out=96, padding=1,)
+        self.convblock1 = conv_block(n_in=3, n_mid=32, n_out=64, padding=1,)
 
         # TRANSITION BLOCK 1 | Dilated Kernel Convolution
-        self.trans1 = transition_block(n_in=96, n_mid=64, n_out=32, stride=2, padding=1,)
+        self.trans1 = transition_block(n_in=64, n_mid=32, n_out=32, stride=2, padding=1,)
         
         # CONVOLUTION BLOCK 2
-        self.convblock2 = depthwise_separable_block(n_in=32, n_out=96, padding=1)
+        self.convblock2 = depthwise_separable_block(n_in=32, n_out=64, padding=1)
 
         # TRANSITION BLOCK 2 | Depthwise Separable Convolution
-        self.trans2 = transition_block(n_in=96, n_mid=64, n_out=8, stride=2, padding=2,)
+        self.trans2 = transition_block(n_in=64, n_mid=32, n_out=8, stride=2, padding=2,)
 
         # CONVOLUTION BLOCK 3
-        self.convblock3 = dilated_conv_block(n_in=8, n_mid=64, n_out=96, padding=2,)
+        self.convblock3 = dilated_conv_block(n_in=8, n_mid=32, n_out=64, padding=2,)
 
         # TRANSITION BLOCK 3
-        self.trans3 = transition_block(n_in=96, n_mid=64, n_out=8, stride=2, padding=1,) 
+        self.trans3 = transition_block(n_in=64, n_mid=16, n_out=8, stride=2, padding=1,) 
 
         # CONVOLUTION BLOCK 4
         self.convblock4 = conv_block(n_in=8, n_mid=16, n_out=32, padding=1,)
