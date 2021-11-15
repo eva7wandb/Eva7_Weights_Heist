@@ -10,3 +10,13 @@
 |Rashu Tyagi|rashutyagi116[at]gmail[dot]com| 
 |Subramanya R|subrananjun[at]gmail[dot]com| 
 
+In this tasks we achieved 86% + accuracy on CIFAR10 using 
+
+## Model Summary
+![image](https://user-images.githubusercontent.com/8600096/141836102-6183a32c-97cc-4154-9771-bd0f2c8edaae.png)
+
+## Traing Log 
+ - Final Model Summary -- 
+![image](https://user-images.githubusercontent.com/8600096/141836450-55b77603-9dd9-4c8e-be35-7cc7bc71b943.png)
+
+## Discussion
