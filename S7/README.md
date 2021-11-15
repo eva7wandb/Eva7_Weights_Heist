@@ -15,6 +15,24 @@ In this tasks we achieved 85% + accuracy on CIFAR10 using 181,322 parameters.
 ## Model Summary
 ![image](https://user-images.githubusercontent.com/8600096/141836102-6183a32c-97cc-4154-9771-bd0f2c8edaae.png)
 
+
+## Image Augmentations
+For image augmenation we used the albumentations library since it is much faster than the pytorch native transforms.
+```python
+train_transform = A.Compose(
+    [
+        A.HorizontalFlip(),
+        A.ShiftScaleRotate(),
+        A.CoarseDropout(
+            max_holes = 1, max_height=16, max_width=16, min_holes = 1, min_height=16,
+            min_width=1, fill_value=mean, mask_fill_value = None
+        ),
+        A.Normalize(mean, std),
+        A.pytorch.ToTensorV2(),
+     ]
+)
+```
+
 ## Traing Log 
  - Final Model Summary -- 
 ![image](https://user-images.githubusercontent.com/8600096/141836450-55b77603-9dd9-4c8e-be35-7cc7bc71b943.png)
