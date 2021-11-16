@@ -10,9 +10,30 @@
 |Rashu Tyagi|rashutyagi116[at]gmail[dot]com| 
 |Subramanya R|subrananjun[at]gmail[dot]com| 
 
-In this tasks we achieved 85% + accuracy on CIFAR10 using 181,322 parameters.
+* Objective: To devise a custom convolution neural network (CNN) architecture to classify multi-class image data, and apply it to CIFAR-10 dataset for performance evaluation.    
+* Result: In this tasks we achieved 85% + accuracy on CIFAR10 using 181,322 parameters.
 
 ## Model Summary
+The skeleton structure for the architecture is fixed which is a sequence containing 4 Convolution blocks and an Output block, denoted as C1-C2-C3-C4-O, and it is required to have transition blocks between any two Convolution blocks (with stride = 2) -- essentially to replace the MaxPooling layers.
+
+Note: Unless explicitly mentioned, all the below blocks have ReLU() and BatchNorm() layers included before passing their output to another block.
+
+> C1 -- Regular Convolution Block stacked with a pair of K = (3, 3) Convolution layers, s = 1, p = 1. Input shape is maintained. Input and Output Channels: (n_in, n_mid) and (n_mid and n_out). Input and Output shape: (C = 3, 32, 32), (N1, 32, 32)
+
+> T1 -- Transition Block 1 is a stack of pair of Convolution layers, first layer with K = (3, 3), s = 2, p = 1, followed by a Pointwise Convolution layer. Shape is halved. Input and Output channels: (n_in, n_mid), and (n_mid, n_out). Input and Output shape: (N1, 32, 32), (N2, 16, 16)
+
+> C2 -- Depthwise Separable (Convolution Block 2) Block performs a Depthwise Convolution (K = (3, 3), s = 1, p = 1, groups = n_in) followed by a Pointwise Convolution, K = (1, 1). Input and Output Channels: (n_in, n_in) and (n_in, n_out). Input and Output shape: (N2, 16, 16), (N3, 16, 16)
+
+> T2 -- Transition Block 2: similar to T1 but with p = 2 to save shape loss, Input and Output shape: (N3, 16, 16), (N4, 8, 8)
+
+> C3 -- Dilated Kernel Convolution Block 3, consists of two blocks, first block is a regular convolution block having two K = (3, 3) convolution layers, and the second block is stacked with a pair of convolution layers of which first layer performs the dilation and the second layer is a Pointwise Convolution. First block uses padding p = 1 retaining the shape. Input and Output shape: (N4, 8, 8), (N5, 8, 8). Second block uses Dilation=2 but uses p = 2 to gain shape (introduced to not to lose the shape). Input and Output shape: (N5, 8, 8), (N6, 9, 9).
+
+> T3 -- Transition Block 3: similar to T1 or T2, with p = 1. Reduces shape. Input and Output shape: (N6, 9, 9), (N7, 5, 5)
+
+> C4 -- Regular Convolution Block similar to C1, with p = 1. Retains shape. Input and Output shape: (N7, 5, 5), (N8, 5, 5)
+
+> O -- Output Block consists of a Pointwise Convolution to bring the channel size to number of categories followed by Global Average Pooling (GAP) layer with a kernel size of 5. Pointwise Layer: Input and Output shape: (N8, 5, 5), (10, 5, 5); GAP Input and Output shape: (10, 5, 5), (10, 1, 1).
+
 ![image](https://user-images.githubusercontent.com/8600096/141836102-6183a32c-97cc-4154-9771-bd0f2c8edaae.png)
 
 
