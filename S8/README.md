@@ -13,7 +13,11 @@
 
 The relevant architecture and procedures are included in the README file of the repository containing the models and utilities files and can be accessed using the below URL:
 
-    https://github.com/eva7wandb/Weights_Heist_Flow
+    https://github.com/eva7wandb/Weights_Heist_Flow.git
+    
+ The code used for training, and other utls are versioned and to avoid any conflicts please clone this version.
+ 
+    ! git clone -b S8_version https://github.com/eva7wandb/Weights_Heist_Flow.git
 
 
 With the file in place as mentioned above, the notebook from this repository, i.e.  `S8_resnetLayerNorm.ipynb` is excuted in Google Colab with GPU option. TorchCAM, a class activation explorer is used to perform the grad-CAM method on images.
