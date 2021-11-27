@@ -1,8 +1,19 @@
-### *`Objective: Obtain Gradient-weighted Class Activation Maps (grad-CAMs) for misclassfied images of CIFAR-10.`*
+## Team - Weights_Heist
+## Team Members - 
+
+| Name        | mail           |
+| ------------- |:-------------:|
+|Gopinath Venkatesan|gops75[at]gmail[dot]com|
+|Muhsin Mohammed|askmuhsin[at]gmail[dot]com|
+|Rashu Tyagi|rashutyagi116[at]gmail[dot]com| 
+|Subramanya R|subrananjun[at]gmail[dot]com| 
+
+
+### `Objective: Obtain Gradient-weighted Class Activation Maps (grad-CAMs) for misclassfied images of CIFAR-10.`
 
 The relevant architecture and procedures are included in the README file of the repository containing the models and utilities files and can be accessed using the below URL:
 
-    `https://github.com/eva7wandb/Weights_Heist_Flow`
+    https://github.com/eva7wandb/Weights_Heist_Flow
 
 
 With the file in place as mentioned above, the notebook from this repository, i.e.  `S8_resnetLayerNorm.ipynb` is excuted in Google Colab with GPU option. TorchCAM, a class activation explorer is used to perform the grad-CAM method on images.
