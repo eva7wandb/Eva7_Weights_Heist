@@ -1,4 +1,4 @@
-### *`Objective: Obtain Gradient-weighted Class Activation Maps (grad-CAMs) for misclassfied images of CIFAR-10.
+### *`Objective: Obtain Gradient-weighted Class Activation Maps (grad-CAMs) for misclassfied images of CIFAR-10.`*
 
 The relevant architecture and procedures are included in the README file of the repository containing the models and utilities files and can be accessed using the below URL:
 
@@ -248,13 +248,25 @@ TEST         Loss:0.4285         Acc:85.70         [8570 / 10000]
 
 The loss metrics graph, seen below, shows that test loss reaches saturation around 25 epochs (test_loss ~ 0.42), and cross-over between training and test loss happens around 22 epochs.
 
-![Screenshot](loss.png)
+![Screenshot](./images/loss.png)
 
 ### Class Activation Maps / grad-CAMs on misclassified images
 
 The grad-CAM implemented misclassified images are attached below along with the class scores.
 
-![Screenshot](gradCAMs.png)
+![Screenshot](./images/g1.png)
+![Screenshot](./images/g2.png)
+![Screenshot](./images/g3.png)
+![Screenshot](./images/g4.png)
+![Screenshot](./images/g5.png)
+![Screenshot](./images/g6.png)
+![Screenshot](./images/g7.png)
+![Screenshot](./images/g8.png)
+![Screenshot](./images/g9.png)
+![Screenshot](./images/g10.png)
+
+
+
 
 
 
