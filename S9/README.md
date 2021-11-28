@@ -11,8 +11,10 @@
 |Subramanya R|subrananjun[at]gmail[dot]com| 
 
 ## Model
-### resnet model architecture
+### model architecture
 ![resnet9_architecture](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S9/resources/resnet9_architecture.png)
+### model summary
+![image](https://user-images.githubusercontent.com/8600096/143740636-e95b6d01-401e-4706-8923-8242cca6c8fe.png)
 
 ## Learning Rate
 
