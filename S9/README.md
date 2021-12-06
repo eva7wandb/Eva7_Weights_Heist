@@ -7,7 +7,7 @@
 ## Team Members - 
 
 | Name        | mail           |
-| ------------- |:-------------:|
+|:-------------|:--------------|
 |Gopinath Venkatesan|gops75[at]gmail[dot]com|
 |Muhsin Mohammed|askmuhsin[at]gmail[dot]com|
 |Rashu Tyagi|rashutyagi116[at]gmail[dot]com| 
@@ -16,9 +16,9 @@
 &nbsp;
 
 ## Model Description
-The model architecture shown below details the sequence of layers / operations. One may note that the model uses two residual connections (Block 1 and Block 3) and rest are regular convolutions. Another observation could be that the MaxPool is located very near the output (one convolution away from the output Softmax layer, and yet the accuracy achieved is pretty good ~ 93%).
+The model architecture shown below details the sequence of layers / operations. One may note that the model uses two residual connections (Block 1 and Block 3) and rest are regular convolutions. Another observation could be that the MaxPool is located very near the output (one convolution away from the output Softmax layer, and yet the accuracy achieved is pretty good ~ 93%). The relevant files implementing the model can be accessed from the URL below:
 
-    https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S9/README.md
+    https://github.com/eva7wandb/Weights_Heist_Flow
 
 
 ### Model Architecture
