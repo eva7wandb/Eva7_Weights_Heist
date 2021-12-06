@@ -1,5 +1,5 @@
 ## S9 - Resnet and Higher Receptive Fields
-### `Objective: Devise a custom ResNet architecture for CIFAR-10 (the details of which is shown in the figure below), and use One Cycle Policy (with no annealation) to train the model for 24 epochs.`
+### `Objective: Devise a custom ResNet architecture for CIFAR-10 (the details of which is shown in the figure below), and use One Cycle Policy (with no annealation) to train the model for 24 epochs to achieve 93%+ test accuracy.`
 
 &nbsp;
 
@@ -160,9 +160,20 @@ TEST         Loss:0.4679         Acc:93.53         [9353 / 10000]
 
 &nbsp;
 
-## Misclassified Images / Grad-CAMs
+## Discussion
+We tried training different iterations of the model.
+We were consistently able to get to get 92%+ accuracy by using Adam as optimizer, One cylce LR with LMAX at 0.00673 and LMIN at 1/10th of LMAX, and by scheduling LMAX at 5th epoch. By adding label smoothing to the mix we were able to get above 93% accuracy consistently.
+The maximum accuracy we were able to get was 93.69% ([notebook](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S9/OCLR_adam__93_69_acc.ipynb)), but it was not reproducible, probably due to good starting conditions. 
+So here is the final trained model with 93.53% accuracy ([notebook](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S9/OCLR_adam_LRfind__93_51_acc.ipynb)).
 
-Grad-CAMs can be implemented at the output layer of Block 2 where the feature map shape is 8 x 8 x 256. The misclassified images and their Grad-CAMs are shown below.
+![image](https://user-images.githubusercontent.com/8600096/144830474-2f38f76d-f1ab-4ef4-85e3-1c18876be245.png)
+
+
+## Label Smoothing
+Label smoothing is a regularization technique to make the model less confident. Label smoothing helps the model become more calibrated, ie.. the models predicted probabilities of outcomes reflect its accuracy. In order to implement label smoothing is easy, it can be set as an optional parameter in pytorch's implementation of cross entropy.
+`torch.nn.CrossEntropyLoss(weight=None, size_average=None, ignore_index=- 100, reduce=None, reduction='mean', label_smoothing=0.0)`
+
+> label_smoothing (float, optional) – A float in [0.0, 1.0]. Specifies the amount of smoothing when computing the loss, where 0.0 means no smoothing. The targets become a mixture of the original ground truth and a uniform distribution.
 
 
 
