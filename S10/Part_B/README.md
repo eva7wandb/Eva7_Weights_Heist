@@ -85,7 +85,7 @@ COCO has 91 classes listed in their info page, but there are only data points fo
 The classes are of regular everyday objects, animals so on. Broadly the categories belongs to these super categories - vehicle, outdoor, animals, sports, food, furniture, electronics, so on... <br>
 Each super category can have several classes, for example super category - "vehicle" has bicycle, car, plane, bus, truck, train, boat. <br>
 This variety of classes makes COCO dataset quite userful in pretraining models for many real world applications. <br>
-You can find the category mapping [here](https://github.com/askmuhsin/eva_experiments/blob/main/S10_object_localization/Part_B/coco_category_mapping.json) <br>
+You can find the category mapping [here](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S10/Part_B/coco_category_mapping.json) <br>
 Here is a breakdown of the classes (from the 2017 Train/Val annotations file which can be downloaded from [here](https://cocodataset.org/#download)) - <br>
 ![image](https://user-images.githubusercontent.com/8600096/126772783-7d57c431-3d85-48f1-b1d1-cb2b8627bc69.png)
 As we can observe `person` is the most common class. (6X more `person` class annotations than `car`, which is the next biggest class) <br> 
@@ -116,7 +116,7 @@ rm -rf ./annotations
 
 
 # K-means for estimating anchor boxes
-The dataset used for K-means bbox estimation is [here](https://github.com/askmuhsin/eva_experiments/blob/main/S10_object_localization/Part_B/sample_coco.txt)
+The dataset used for K-means bbox estimation is [here](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S10/Part_B/sample_coco.txt)
 ![image](https://user-images.githubusercontent.com/8600096/126826009-3824c10f-d227-4289-a534-5888e2bf9eaa.png)
 
 
