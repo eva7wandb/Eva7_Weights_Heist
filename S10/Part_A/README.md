@@ -46,11 +46,17 @@ Here is the code snippet:
 ### Training Logs
 [INFO] Begin training for 40 epochs.
 TRAIN Epoch:0 Loss:4.9952 Batch:150 Acc:2.74: 100%|██████████| 151/151 [05:16<00:00,  2.09s/it]
+
 TEST         Loss:4.8815         Acc:4.78         [1576 / 33000]
+
 TRAIN Epoch:1 Loss:4.4532 Batch:150 Acc:6.55: 100%|██████████| 151/151 [04:55<00:00,  1.96s/it]
+
 TEST         Loss:4.4146         Acc:8.90         [2936 / 33000]
+
 TRAIN Epoch:2 Loss:3.6964 Batch:150 Acc:11.72: 100%|██████████| 151/151 [05:23<00:00,  2.14s/it]
+
 TEST         Loss:4.0434         Acc:14.81         [4886 / 33000]
+
 TRAIN Epoch:3 Loss:3.8201 Batch:150 Acc:17.03: 100%|██████████| 151/151 [05:14<00:00,  2.08s/it]
 TEST         Loss:3.7531         Acc:20.52         [6772 / 33000]
 TRAIN Epoch:4 Loss:3.611 Batch:150 Acc:22.48: 100%|██████████| 151/151 [05:10<00:00,  2.06s/it] 
