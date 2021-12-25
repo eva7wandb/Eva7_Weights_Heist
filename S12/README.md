@@ -20,7 +20,7 @@
 
 
 Spatial transformer netowrk (STN) is a learnable module which is used with a CNN.     
-It is used to address the limitation of CNNs in being able to be spatially invariant to the input data.     
+It is used to address the limitation of CNNs in being not able to be spatially invariant to the input data.     
 Essentially STN outputs an affine transformation of the input image, which will be enhanced with the appropriate scale, sheer, rotation and translations.     
 The nice thing about STN is, it can be plugged into any existing CNN architectures.     
 It also does not have to be limited to be used just as the first block of transfromation.
