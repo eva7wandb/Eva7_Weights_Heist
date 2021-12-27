@@ -79,7 +79,8 @@ test_affine_transformations(theta, test_input)
 ![affine implementation pytorch](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S12/resources/affine_transform_sample.png)     
 
 # CIFAR10 trained on STN
-Training Notebook -- <strong>[STN CIFAR 10](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S12/STN_CIFAR10.ipynb)</strong>    
+Training Notebook -- <strong>[STN CIFAR 10](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S12/STN_CIFAR10.ipynb)</strong>   
+Open in colab -- <strong>[colab](https://colab.research.google.com/github/eva7wandb/Eva7_Weights_Heist/blob/main/S12/STN_CIFAR10_2.ipynb)</strong>   
 ## Visualize STN
 The outputs of STN visualized as an animation starting from EPOCH 1 to EPOCH 50. 👇
 <img src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S12/stn_cifar10.gif" data-canonical-src="https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S12/stn_cifar10.gif" width="600" height="400" />
