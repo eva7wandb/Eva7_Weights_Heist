@@ -39,7 +39,7 @@ We use the [Repo](https://github.com/theschoolofai/YoloV3) to train the model on
 
 ### Video Inference Output
 
-![Video Output](https://youtu.be/_FQJxBh8qI8)
+[![Video Output](https://youtu.be/_FQJxBh8qI8/0.jpg)](https://youtu.be/_FQJxBh8qI8)
 
 
 ### Sixteen (4 per class) Images Inference
