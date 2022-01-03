@@ -39,7 +39,7 @@ We use the [Repo](https://github.com/theschoolofai/YoloV3) to train the model on
 
 ### Video Inference Output
 
-[![Video Output](https://youtu.be/_FQJxBh8qI8/0.jpg)](https://youtu.be/_FQJxBh8qI8)
+[![Video Output](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S11/yoloV3_custom_dataset/infered_images/out00001.png)](https://youtu.be/_FQJxBh8qI8)
 
 
 ### Sixteen (4 per class) Images Inference
