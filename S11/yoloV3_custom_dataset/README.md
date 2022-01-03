@@ -34,15 +34,15 @@ We use the [Repo](https://github.com/theschoolofai/YoloV3) to train the model on
 
 ### Traing log
 
-[!https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S11/yoloV3_custom_dataset/training_log.png]
+![Training Log](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S11/yoloV3_custom_dataset/training_log.png)
 
 
 ### Video Inference Output
 
-[!https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S11/yoloV3_custom_dataset/videos/test.mp4]
+![Video Output](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S11/yoloV3_custom_dataset/videos/test.mp4)
 
 
 ### Sixteen (4 per class) Images Inference
 
-[!https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S11/yoloV3_custom_dataset/16_inferred_pics.png]
+![Images](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S11/yoloV3_custom_dataset/16_inferred_pics.png)
 
