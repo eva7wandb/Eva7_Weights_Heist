@@ -11,17 +11,19 @@
 |Subramanya R|subrananjun[at]gmail[dot]com| 
 
 
-### ViT Training - Cats and Dogs dataset
+## ViT Training - Cats and Dogs dataset
+
+[Notebook Link](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S13/assignment13_vit_cats_dogs.ipynb)
 
 In this assignment we train train a ViT model for a custom dataset to detect cats and dogs. The dataset if from Kaggle competition and the notebook is from this [blog post](https://analyticsindiamag.com/hands-on-vision-transformers-with-pytorch/). 
 
-## Dataset
+### Dataset
 
 We can download the [dataset](https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data) from Kaggle site. It will have two zip files train.zip and test.zip. We will have to unzip these and extract the files to a data folder.
 
 Training data file names will have prefix indicating the image class (cat or dog). We build training labels 1 for dog and 0 for cat. We also split the training data into train and validation sets using 80:20 ratio.
 
-## Model
+### Model
 
 The model is imported from vit-pytorch library. We use Linformer library for the transformer block.
 
@@ -49,9 +51,9 @@ model = ViT(
 ).to(device)
 ~~~
 
-## Training
+### Training
 
-We use cross-entropy loss function with adam optimizer with learning rate of 3e-5 with StepLR scheduler.
+We use cross-entropy loss function, adam optimizer with learning rate of 3e-5 and StepLR scheduler.
 
 Below is the training log output.
 
