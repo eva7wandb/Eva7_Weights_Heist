@@ -15,7 +15,7 @@
 
 [Notebook Link](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S13/assignment13_vit_cats_dogs.ipynb)
 
-In this assignment we train train a ViT model for a custom dataset to detect cats and dogs. The dataset if from Kaggle competition and the notebook is from this [blog post](https://analyticsindiamag.com/hands-on-vision-transformers-with-pytorch/). 
+In this assignment we train a ViT model with a custom dataset to detect cats and dogs. The dataset is from Kaggle competition and the notebook is from this [blog post](https://analyticsindiamag.com/hands-on-vision-transformers-with-pytorch/). 
 
 ### Dataset
 
