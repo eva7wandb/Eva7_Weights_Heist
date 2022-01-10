@@ -291,7 +291,7 @@ Below line of code creates the model with output of 2 classes and loads the pre-
 model = timm.create_model('vit_base_patch16_224', pretrained=True, num_classes=2).to(device)
 ~~~
 
-We further fine tune the model with out cats and dogs dataset. Traiing log for 12 epochs is listed below.
+We further fine tune the model with our cats and dogs dataset. Training log for 12 epochs is listed below.
 
 100%|██████████| 1250/1250 [07:43<00:00,  2.70it/s]
 Epoch : 1 - loss : 0.0883 - acc: 0.9656 - val_loss : 0.1100 - val_acc: 0.9497
