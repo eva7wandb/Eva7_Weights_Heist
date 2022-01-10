@@ -13,8 +13,6 @@
 
 ## ViT Training - Cats and Dogs dataset
 
-[Notebook Link](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S13/assignment13_vit_cats_dogs.ipynb)
-
 In this assignment we train a ViT model with a custom dataset to detect cats and dogs. The dataset is from Kaggle competition and the notebook is from this [blog post](https://analyticsindiamag.com/hands-on-vision-transformers-with-pytorch/). 
 
 ### Dataset
@@ -51,7 +49,8 @@ model = ViT(
 ).to(device)
 ~~~
 
-### Training
+### Training without pre-trained weights - [Notebook Link](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S13/assignment13_vit_cats_dogs.ipynb)
+
 
 We use cross-entropy loss function, adam optimizer with learning rate of 3e-5 and StepLR scheduler.
 
@@ -281,3 +280,51 @@ Epoch : 74 - loss : 0.5409 - acc: 0.7190 - val_loss : 0.5449 - val_acc: 0.7243
 
 100%|██████████| 79/79 [01:21<00:00,  1.03s/it]
 Epoch : 75 - loss : 0.5399 - acc: 0.7201 - val_loss : 0.5457 - val_acc: 0.7178
+
+
+### Training with pre-trained weights - [Notebook Link](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S13/pretrained_assignment13_vit_cats_dogs.ipynb)
+
+We use PyTorch Image Models (timm) libraries for loading pre-trained weights for a ViT base model 'vit_base_patch16_224'.
+Below line of code creates the model with output of 2 classes and loads the pre-trained weights.
+
+~~~
+model = timm.create_model('vit_base_patch16_224', pretrained=True, num_classes=2).to(device)
+~~~
+
+We further fine tune the model with out cats and dogs dataset. Traiing log for 12 epochs is listed below.
+
+100%|██████████| 1250/1250 [07:43<00:00,  2.70it/s]
+Epoch : 1 - loss : 0.0883 - acc: 0.9656 - val_loss : 0.1100 - val_acc: 0.9497
+
+100%|██████████| 1250/1250 [07:45<00:00,  2.68it/s]
+Epoch : 2 - loss : 0.0723 - acc: 0.9709 - val_loss : 0.0663 - val_acc: 0.9714
+
+100%|██████████| 1250/1250 [07:42<00:00,  2.70it/s]
+Epoch : 3 - loss : 0.0694 - acc: 0.9707 - val_loss : 0.0657 - val_acc: 0.9736
+
+100%|██████████| 1250/1250 [07:44<00:00,  2.69it/s]
+Epoch : 4 - loss : 0.0740 - acc: 0.9689 - val_loss : 0.0815 - val_acc: 0.9663
+
+100%|██████████| 1250/1250 [07:43<00:00,  2.70it/s]
+Epoch : 5 - loss : 0.0706 - acc: 0.9702 - val_loss : 0.0637 - val_acc: 0.9732
+
+100%|██████████| 1250/1250 [07:42<00:00,  2.70it/s]
+Epoch : 6 - loss : 0.0640 - acc: 0.9745 - val_loss : 0.0718 - val_acc: 0.9690
+
+100%|██████████| 1250/1250 [07:43<00:00,  2.70it/s]
+Epoch : 7 - loss : 0.0680 - acc: 0.9720 - val_loss : 0.0739 - val_acc: 0.9680
+
+100%|██████████| 1250/1250 [07:43<00:00,  2.70it/s]
+Epoch : 8 - loss : 0.0610 - acc: 0.9744 - val_loss : 0.0756 - val_acc: 0.9678
+
+100%|██████████| 1250/1250 [07:42<00:00,  2.70it/s]
+Epoch : 9 - loss : 0.0654 - acc: 0.9729 - val_loss : 0.0832 - val_acc: 0.9633
+
+100%|██████████| 1250/1250 [07:43<00:00,  2.70it/s]
+Epoch : 10 - loss : 0.0588 - acc: 0.9756 - val_loss : 0.0709 - val_acc: 0.9694
+
+100%|██████████| 1250/1250 [07:42<00:00,  2.70it/s]
+Epoch : 11 - loss : 0.0600 - acc: 0.9750 - val_loss : 0.0566 - val_acc: 0.9762
+
+100%|██████████| 1250/1250 [07:42<00:00,  2.70it/s]
+Epoch : 12 - loss : 0.0527 - acc: 0.9785 - val_loss : 0.0675 - val_acc: 0.9722
