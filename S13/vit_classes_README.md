@@ -1,5 +1,5 @@
 # ViT Classes Documentation 
-Notebook with ViT code here -- 
+Notebook with ViT code here -- [colab link](https://colab.research.google.com/github/eva7wandb/Eva7_Weights_Heist/blob/main/S13/S13_Class_Notes.ipynb)
 
 
 ## ViT Class Structure
