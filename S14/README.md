@@ -31,6 +31,8 @@ The 👆 data is not in the COCO format. The annotation files need to be convert
 
 This can be done using this repo -- [link](https://github.com/woctezuma/VIA2COCO) (the instructions to do it is available in the repo).
 
+Since the dataset is relatively small we have included the whole dataset with the above transformations here -- [path](https://github.com/eva7wandb/Eva7_Weights_Heist/tree/main/S14/coco_dataset/balloon_coco)
+
 ### Sample images -- 
 
 ![image](https://user-images.githubusercontent.com/8600096/149612881-a9ac8010-9bb8-4451-8897-21882cee3d60.png)
