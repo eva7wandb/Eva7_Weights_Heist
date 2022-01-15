@@ -66,3 +66,12 @@ python main.py \
 The eval notebook **DETR_model_evaluation.ipynb**, contains loss graph, and inference on test image.
 
 The training logs can be found in dir -- `./test_data/log.txt`
+
+![image](https://user-images.githubusercontent.com/8600096/149626278-6768012d-8014-4ef6-9584-b6c72251b8ab.png)
+![image](https://user-images.githubusercontent.com/8600096/149626281-3a425fde-4283-4c53-954e-25496b641a40.png)
+![image](https://user-images.githubusercontent.com/8600096/149626287-d25fb760-c116-4769-b681-76d0a3ec54dd.png)
+
+### Test image -- 
+![image](https://user-images.githubusercontent.com/8600096/149626299-e9adc593-be37-44e6-9e79-c717c0b417ad.png)
+
+
