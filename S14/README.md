@@ -50,7 +50,7 @@ once the above repo is cloned, ensure --
 - the dataset is prepared as in the previous step.
 - the DETR model is downloaded.
     - The model can be downloaded from this repo -- [link](https://github.com/facebookresearch/detr#model-zoo)
-    - once the model is downloaded, remove the class weights and save it. the **DETR_pre_finetune_setup.ipynb**  notebook has the steps to do it.
+    - once the model is downloaded, remove the class weights and save it. the [**DETR_pre_finetune_setup.ipynb**](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S14/DETR_pre_finetune_setup.ipynb)  notebook has the steps to do it.
 - train the model by running the following command, from the detr repo.
 ```bash
 python main.py \
@@ -63,7 +63,7 @@ python main.py \
   ```
 
 ## Evaluation result
-The eval notebook **DETR_model_evaluation.ipynb**, contains loss graph, and inference on test image.
+The eval notebook [**DETR_model_evaluation.ipynb**](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S14/DETR_model_evaluation.ipynb), contains loss graph, and inference on test image.
 
 The training logs can be found in dir -- `./test_data/log.txt`
 
