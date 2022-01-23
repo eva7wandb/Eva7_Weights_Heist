@@ -11,7 +11,7 @@
 |Subramanya R|subrananjun[at]gmail[dot]com| 
 
 
-** Explanation for DETR model architecture can be found in this [readme](DETR Explanation.md) **
+**Explanation for DETR model architecture can be found in this [readme](DETR Explanation.md)**
 
   
 ## Custom Dataset -- Balloons
