@@ -11,7 +11,7 @@
 |Subramanya R|subrananjun[at]gmail[dot]com| 
 
 
-**Explanation for DETR model architecture can be found in this [readme](DETR Explanation.md)**
+**Explanation for DETR model architecture can be found in this [readme](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S14/DETR%20Explanation.md)**
 
   
 ## Custom Dataset -- Balloons
