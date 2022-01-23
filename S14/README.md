@@ -10,6 +10,10 @@
 |Muhsin Mohammed|askmuhsin[at]gmail[dot]com|
 |Subramanya R|subrananjun[at]gmail[dot]com| 
 
+
+** Explanation for DETR model architecture can be found in this [readme](DETR Explanation.md) **
+
+  
 ## Custom Dataset -- Balloons
 More details on the dataset here -- [link](https://github.com/matterport/Mask_RCNN/tree/master/samples/balloon)
 This dataset contains 2 classes (balloons and background). And contains in total 61 image in training, and 13 for test.
