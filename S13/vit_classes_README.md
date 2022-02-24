@@ -8,7 +8,7 @@ Notebook with ViT code here -- [colab link](https://colab.research.google.com/gi
 The ViT implementation in the above notebook in total has 12 classes. (including the ViTConfig class).    
 The nested structure in the diagram below indicates how some classes are wrapping other classes within it. (beyond wrapping, there are also transformations in most of these classes).     
 
-![Vit Class Structure](https://github.com/eva7wandb/Eva7_Weights_Heist/blob/main/S13/resources/vit_class_structure.png)
+![ViT Class Structure](./resources/vit_class_structure.png)
 
 
 ## Class Descriptions
